@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.formH1 {
+    font-family: 'Inter';
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+h1 {
+    color:rgb(0, 0, 0);
+}
+
+.form-completo {
+    font-family: 'Inter';
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 2px;
+    box-shadow: 1px 1px 15px 5px #e0c480;
+    border-radius: 50px;
+    background-color: #ebebeb;
+
+}
+
+.divPrincipal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    padding-top:10vW;
+}
+
+.emptyText {
+    color: red;
+    font-weight: 900;
+}
+
+input {
+    width: 120px;
+    padding: 5px;
+    border: 2px solid rgba(215, 215, 215, 0.696);
+    border-radius: 10px;
+    background-color:rgb(249, 252, 255);
+}
+
+textarea, select {
+    color:#e0c480;
+    padding: 5px;
+    border: 2px solid rgba(215, 215, 215, 0.696);
+    border-radius: 10px;
+    background-color:rgb(249, 252, 255);
+}
+
+.form1, .form2, .form3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    gap: 10px;
+
+}
+
+.form4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    gap: 5px;
+}
+
+.botao {
+    padding: 10px;
+    border: 2px solid #e0c480;
+    border-radius: 5px;
+    background-color:rgb(249, 252, 255);
+}
+.botao:hover{
+background-color: #e0c480;
+}
+
+input::placeholder, textarea::placeholder {
+    font-family: 'Inter';
+    color: #e0c480;
+}
+
+
+
+@media (max-width: 680px) {
+
+    .form1,
+    .form2,
+    .form3,
+    .form4 {
+        display: flex;
+        flex-direction: column;        
+    }
+
+    textarea {
+        width: 90%;
+    }
+
+    .form-completo {
+        width:90%;
+    }
+}
