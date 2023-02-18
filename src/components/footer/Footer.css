@@ -1,0 +1,11 @@
+.footer {
+   	height: 5vW;
+	padding: 0 2rem;
+    display:flex;
+    flex-direction: column;
+    background-color: var(--mainColor);
+    color:var(--secondaryColor);
+    position: absolute;
+    width: 100%;
+    
+}

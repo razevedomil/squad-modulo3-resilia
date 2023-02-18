@@ -22,7 +22,13 @@ function Navbar() {
 						<Link to="/galeria">Galeria</Link>
 					</li>
 					<li>
-						<Link to="/">contato</Link>
+						<Link to="/">Sobre nós</Link>
+					</li>
+					<li>
+						<Link to="/">Contato</Link>
+					</li>
+					<li>
+						<Link to="/">Blog</Link>
 					</li>
 				</ul>
 				<button

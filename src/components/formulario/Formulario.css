@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
 
 * {
     margin: 0;
@@ -7,9 +6,7 @@
     box-sizing: border-box;
 }
 
-
 .formH1 {
-    font-family: 'Inter';
     font-size: 1em;
     display: flex;
     align-items: center;
@@ -18,21 +15,21 @@
 }
 
 h1 {
-    color:rgb(0, 0, 0);
+    color: var(--maincolor);
 }
 
 .form-completo {
-    font-family: 'Inter';
+    background-color: var(--textColor);
     width: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 20px;
     border: 2px;
-    box-shadow: 1px 1px 15px 5px #e0c480;
+    margin:10px;
+    box-shadow: 1px 1px 12px 5px var(--secondaryColor);
     border-radius: 50px;
-    background-color: #ebebeb;
 
 }
 
@@ -50,19 +47,20 @@ h1 {
 }
 
 input {
-    width: 120px;
+    width: 125px;
     padding: 5px;
     border: 2px solid rgba(215, 215, 215, 0.696);
     border-radius: 10px;
-    background-color:rgb(249, 252, 255);
+    
+    background-color:white;
 }
 
 textarea, select {
-    color:#e0c480;
+    color:var(--darkerSecondaryColor);
     padding: 5px;
     border: 2px solid rgba(215, 215, 215, 0.696);
     border-radius: 10px;
-    background-color:rgb(249, 252, 255);
+    background-color:white;
 }
 
 .form1, .form2, .form3 {
@@ -85,17 +83,17 @@ textarea, select {
 
 .botao {
     padding: 10px;
-    border: 2px solid #e0c480;
+    border: 2px solid var(--secondaryColor);
     border-radius: 5px;
-    background-color:rgb(249, 252, 255);
+    background-color:white;
 }
 .botao:hover{
-background-color: #e0c480;
+background-color: var(--secondaryColor);
 }
 
 input::placeholder, textarea::placeholder {
-    font-family: 'Inter';
-    color: #e0c480;
+    color: var(--darkerSecondaryColor);
+    
 }
 
 

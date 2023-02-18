@@ -11,8 +11,10 @@
 	--mainColor: #141216;
 	--mainColorLight: #1b2a66;
 	--secondaryColor: #e0c480;
+	--darkerSecondaryColor: #c99a22;
 	--textColor: #eee;
 }
+
 
 header {
 	display: flex;
