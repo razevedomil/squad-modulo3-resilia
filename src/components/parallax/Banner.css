@@ -46,6 +46,8 @@
     -webkit-background-size: cover;
     -moz-background-size: cover ;
     -o-background-size: cover ;
+    border-top: 1px solid rgb(5, 5, 5);
+    
   
   }
   
@@ -55,7 +57,7 @@
     width: 100%;
     position: absolute;
     z-index: 8;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 30%, #000 100%);
   }
   
   section.module.parallax-1{
@@ -64,56 +66,83 @@
   }
 
   
-  section.module.parallax h1{
+  h1.fundo1{
+    width: 100%;
+    position: absolute;
+    top: 120px;
     color: #fff;
-    text-align: center;
-    font-size: 78px;
-    z-index: 9;
+    opacity: 7%;
+    font-size: max(150px, 10vw);
     text-transform: uppercase;
-    letter-spacing: -2px;
+    font-weight: bold;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+    letter-spacing: 0;
+    word-spacing: 1.2px;
+
+  }
+
+  h1.fundo2{
+    width: 100%;
+    position: absolute;
+    top: 300px;
+    left: 200px;
+    color: #fff;
+    opacity: 7%;
+    font-size: max(120px, 13vw);
+    text-transform: uppercase;
+    font-weight: bold;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+    letter-spacing: -5px;
     word-spacing: 1.2px;
   }
 
-  .focus-in-contract-bck {
-    -webkit-animation: focus-in-contract-bck 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-            animation: focus-in-contract-bck 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  h4.fundo3{
+    width: 30%;
+    position: relative;
+    color: #fff;
+    left: 50px;
+    align-items: center;
+    font-size: min(50px, 3vw);
+    text-transform: uppercase;
+    transition: 0.5s;
+  }
+
+  h6.fundo4{
+    position: absolute;
+    top: 660px;
+    left: 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: bold;
+
+  }
+
+  .effect{
+    content: " ";
+    position: absolute;
+    top: 700px;
+    left: 20px;
+    background-color: #fff;
+    color: #fff;
+    width: 200px;
+    height: 2px;
   }
 
 
-  
-  @-webkit-keyframes focus-in-contract-bck {
-    0% {
-      letter-spacing: 1em;
-      -webkit-transform: translateZ(300px);
-              transform: translateZ(300px);
-      -webkit-filter: blur(12px);
-              filter: blur(12px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateZ(12px);
-              transform: translateZ(12px);
-      -webkit-filter: blur(0);
-              filter: blur(0);
-      opacity: 1;
+
+  @media only screen and (max-width: 1024px) {
+    h4.fundo3{
+      width: 50%;
+      position: relative;
+      color: #fff;
+      top: 200px;
+      left: 50px;
+      align-items: center;
+      font-size: 4.5vw;
+      transition: 0.5s;
+      text-transform: uppercase;
     }
   }
-  @keyframes focus-in-contract-bck {
-    0% {
-      letter-spacing: 1em;
-      -webkit-transform: translateZ(300px);
-              transform: translateZ(300px);
-      -webkit-filter: blur(12px);
-              filter: blur(12px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateZ(12px);
-              transform: translateZ(12px);
-      -webkit-filter: blur(0);
-              filter: blur(0);
-      opacity: 1;
-      text-shadow: -2px 6px 4px #000000;
-    }
-  }
-  

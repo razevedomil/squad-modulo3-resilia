@@ -47,7 +47,6 @@ const Formulario = () => {
         <div className="divPrincipal">
 
             <form className="form-completo" id="form" onSubmit={(e) => { handleSubmit(e) }}>
-                <div className="formH1"><h1>Formulário de Orçamento</h1></div>
                 <div className="form1">
                     <label className="nome">Nome</label>
                     <input type="text" placeholder="Nome Sobrenome" name="nome" onBlur={(e) => handleChange(e)} />
@@ -79,8 +78,8 @@ const Formulario = () => {
                     <label className="tamanhoTatuagem">Tamanho aproximado</label>
                     <input type="text" placeholder="15 cm" name="tamanhoTatuagem" onBlur={(e) => handleChange(e)}></input>
                     {emptyValues && form["tamanhoTatuagem"] == "" ? <span className="emptyText">!</span> : ""}
-                    <label className="arteTatuagem">Referência:</label>
-                    <input type="file" className="input-file" accept="image/*" required></input>
+                    <label for="arquivo" className='enviar'>Enviar arquivo</label>
+                    <input type="file" name="arquivo" id="arquivo"></input>
                 </div>
 
                 <div className="form4">

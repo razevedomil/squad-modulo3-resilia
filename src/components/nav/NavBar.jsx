@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { Link } from 'react-router-dom'
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaAlignRight, FaTimes} from "react-icons/fa";
 import "./NavBar.css";
 
 function Navbar() {
@@ -13,7 +13,7 @@ function Navbar() {
 	return (
 		<header>
 			<h3>Arteiro</h3>
-			<nav ref={navRef}>
+			<nav ref={navRef} >
 				<ul>
 					<li>
 						<Link to="/">Home</Link>
@@ -38,7 +38,7 @@ function Navbar() {
 				</button>
 			</nav>
 			<button className="nav-btn" onClick={showNavbar}>
-				<FaBars />
+				<FaAlignRight />
 			</button>
 		</header>
 	);

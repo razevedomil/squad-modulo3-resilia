@@ -10,7 +10,7 @@
 :root {
 	--mainColor: #141216;
 	--mainColorLight: #1b2a66;
-	--secondaryColor: #e0c480;
+	--secondaryColor: #696969;
 	--darkerSecondaryColor: #c99a22;
 	--textColor: #eee;
 }
@@ -22,20 +22,37 @@ header {
 	justify-content: space-between;
 	height: 80px;
 	padding: 0 2rem;
-	background-color: var(--mainColor);
-	color: var(--textColor);
-    border-bottom: 1px solid var(--secondaryColor);
+	background-image: linear-gradient(to bottom, #101011, #151516, #1a1a1a, #1e1e1f, #232323);
 }
-
 
 nav a {
 	margin: 0 1rem;
 	color: var(--textColor);
 	text-decoration: none;
+	padding-right: 20px;
+	font-size: 16px;
+	position: relative;
 }
 
-nav a:hover {
+nav a:hover{
+	color: #696969;
+}
+
+nav a::after{
+  content: "";
+  width: 0px;
+  height: 20px;
+  background-image: linear-gradient(45deg, rgba(252, 251, 251, 0.267), #ffffff);
+  position: absolute;
+  top: -2px;
+  left: -10px;
+}
+
+nav a:hover::after {
 	color: var(--secondaryColor);
+	width: 3px;
+	transition: all 0.4s;
+	
 }
 
 header .nav-btn {
@@ -73,6 +90,15 @@ ul {
 		opacity: 1;
 	}
 
+	ul {
+		display: flex;
+		flex-direction: column;
+	}
+
+	li{
+		padding: 20px;
+	}
+
 	header nav {
 		position: fixed;
 		top: 0;
@@ -85,13 +111,15 @@ ul {
 		justify-content: center;
 		gap: 1.5rem;
 		background-color: var(--mainColor);
-		transition: 1s;
-		transform: translateY(-100vh);
+		transform: translateY(-300vw);
         z-index: 999999;
+	
 	}
+
 
 	header .responsive_nav {
 		transform: none;
+		transition: 0.7s;
 	}
 
 	nav .nav-close-btn {
@@ -102,5 +130,13 @@ ul {
 
 	nav a {
 		font-size: 1.5rem;
+		
 	}
+
+	nav a::after{
+		content: "";
+		width: 0px;
+		height: 0px;
+	  }
+
 }
