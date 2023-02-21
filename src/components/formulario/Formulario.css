@@ -32,6 +32,8 @@
 
 input {
     width: 225px;
+    
+    color: #fff;
     padding: 5px 10px 5px 10px;
     border: 1px solid rgba(58, 57, 57, 0.696);
     background-color: #0f0f0f;
@@ -44,6 +46,7 @@ textarea, select {
     background-color: #0f0f0f;
     padding-left: 10px;
 }
+
 
 textarea {
     resize: none;
@@ -94,7 +97,7 @@ background-color: var(--secondaryColor);
 }
 
 input::placeholder, textarea::placeholder {
-    color: #fff;
+    color: #686868;
     
 }
 
