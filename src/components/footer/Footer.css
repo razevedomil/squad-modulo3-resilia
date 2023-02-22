@@ -1,11 +1,13 @@
 .footer {
-   	height: 5vW;
+   	height: 2vW;
 	padding: 0 2rem;
-    display:flex;
-    flex-direction: column;
+    display:flex;    
+    align-items: center;
+    justify-content: space-around;
     background-color: var(--mainColor);
     color:var(--secondaryColor);
     position: absolute;
     width: 100%;
     
+
 }

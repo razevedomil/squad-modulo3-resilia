@@ -3,12 +3,7 @@ const Footer = () => {
     return (
         <footer>
             <div className="footer">
-            <ul>
-                <li>teste</li>
-                <li>teste</li>
-                <li>teste</li>
-                <li>teste</li>
-            </ul>
+           <p>Arteiro Tattoo Studio - 2023</p>
             </div>
         </footer>
     )

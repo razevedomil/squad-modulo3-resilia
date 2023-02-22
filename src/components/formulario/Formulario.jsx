@@ -59,7 +59,7 @@ const Formulario = () => {
                 <div className="form2">
                     <label>Tatuador</label>
                     <select required className='input'>
-                        <option value="" disabled defaultValue hidden >Escolha um tatuador</option>
+                        <option value="" hidden>Escolha um tatuador</option>
                         <option>Lívia (Blackwork)</option>
                         <option>Peter (Realismo)</option>
                         <option>Bárbara (Pontilhismo)</option>
@@ -67,8 +67,8 @@ const Formulario = () => {
                         <option>Laura (Lettering)</option>
                         <option>Sávio (Fine Line)</option>
                         <option>Escolha por mim!</option>
-
                     </select>
+                    
                     <label className="localTatuagem">Parte do corpo</label>
                     <input type="text" placeholder="Antebraço" name="localTatuagem" className='input' onBlur={(e) => handleChange(e)}></input>
                     {emptyValues && form["localTatuagem"] == "" ? <span className="emptyText">!</span> : ""}
@@ -79,7 +79,7 @@ const Formulario = () => {
                     <input type="text" placeholder="15 cm" name="tamanhoTatuagem" className='input' onBlur={(e) => handleChange(e)}></input>
                     {emptyValues && form["tamanhoTatuagem"] == "" ? <span className="emptyText">!</span> : ""}
                     <label for="arquivo" className='enviar'>Enviar arquivo</label>
-                    <input type="file" name="arquivo" id="arquivo"></input>
+                    <input type="file" accept="image/*" name="arquivo" id="arquivo"></input>
                 </div>
 
                 <div className="form4">
