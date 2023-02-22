@@ -23,7 +23,6 @@ header {
 	height: 80px;
 	padding: 0 2rem;
 	background-image: linear-gradient(to bottom, #101011, #151516, #1a1a1a, #1e1e1f, #232323);
-	border-bottom: 1px solid #666565;
 }
 
 nav a {
@@ -31,9 +30,8 @@ nav a {
 	color: var(--textColor);
 	text-decoration: none;
 	padding-right: 20px;
-	font-size: 12px;
+	font-size: 16px;
 	position: relative;
-	text-transform: uppercase;
 }
 
 nav a:hover{
@@ -84,14 +82,6 @@ ul {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-}
-
-.logo{
-	font-size: 0.4vw;
-	font-family: 'Ubuntu', sans-serif;
-	font-weight: bold;
-	text-transform: uppercase;
-	color: rgb(247, 240, 240);
 }
 
 @media only screen and (max-width: 1024px) {

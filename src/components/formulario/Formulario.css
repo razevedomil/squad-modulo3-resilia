@@ -37,10 +37,7 @@ input {
     padding: 5px 10px 5px 10px;
     border: 1px solid rgba(58, 57, 57, 0.696);
     background-color: #0f0f0f;
-    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
-    color: #fff;
 }
-
 
 textarea, select {
     color: #fff;
@@ -54,13 +51,6 @@ textarea, select {
 textarea {
     resize: none;
     width: 80%;
-}
-
-.input:focus{
-    border: 1px solid #f0d851;
-    outline: none;
-    transition: all 0.7s ease-in;
-    
 }
 
 input[type="file"]{
@@ -96,16 +86,14 @@ input[type="file"]{
 
 .botao {
     padding: 10px;
-    border: 1px solid #f3f3f3;
+    border: 1px solid #857a5b;
     border-radius: 5px;
     background-color:rgb(240, 194, 45);
     color: #000;
     font-size: 20px;
-    transition: 1s;
 }
 .botao:hover{
 background-color: var(--secondaryColor);
-color: #fff;
 }
 
 input::placeholder, textarea::placeholder {

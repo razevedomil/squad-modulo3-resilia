@@ -12,7 +12,7 @@ function Navbar() {
 
 	return (
 		<header>
-			<h3 className="logo">Arteiro</h3>
+			<h3>Arteiro</h3>
 			<nav ref={navRef} >
 				<ul>
 					<li>
