@@ -29,7 +29,7 @@ const Home = () => {
 
     return (
         <div>
-            <h1>Tatuadores :</h1>
+            <h1>Tatuadores:</h1>
             {(Tatuadores.map((Tatuador) => (
                 <div className="Tatuador" key={Tatuador.id}>
                     <h2>{Tatuador.Nome}</h2>
