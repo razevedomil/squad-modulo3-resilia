@@ -2,6 +2,7 @@
 .Api-site{
     width: 100%;
     height: 30vh;
+    display: inline-block;
 }
 
 
@@ -27,7 +28,6 @@ h2.tatuador-nome {
 }
 
 p.tatuador-sobre {
-    margin-left: -25%;
     color: #ffffff ;
 }
 

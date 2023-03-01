@@ -42,4 +42,24 @@ const Api = () => {
 
 };
 
+const data = {
+    // Objeto com os dados que deseja enviar no POST
+  };
+  
+  axios.post('https://projeto-modulo3-resilia.onrender.com/Tatuadores/2/', data)
+    .then((response) => {
+      // Tratar a resposta do servidor em caso de sucesso
+    })
+    .catch((error) => {
+      // Tratar a resposta do servidor em caso de erro
+    });
+
+axios.delete('https://projeto-modulo3-resilia.onrender.com/Tatuadores/')
+  .then((response) => {
+    // Tratar a resposta do servidor em caso de sucesso
+  })
+  .catch((error) => {
+    // Tratar a resposta do servidor em caso de erro
+  });
+
 export default Api;
