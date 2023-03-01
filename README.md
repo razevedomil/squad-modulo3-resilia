@@ -5,7 +5,9 @@ Projeto construído através do framework React, utilizando um servidor Json con
 *******
 
 ## 💻 Como executar? 
-• Para instalar as dependências na pasta local node_modules, execute o comando a seguir no Terminal do seu Editor de Código:
+• Instale o [Node.js](https://nodejs.org/en/download/)
+
+• Abra seu Editor de Código e instale as dependências na pasta local node_modules através do comando a seguir:
 ```
 npm install
 ```
