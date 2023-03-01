@@ -4,7 +4,7 @@ import Footer from "../components/footer/Footer"
 function Home () {
     return(
         <div>
-        <main>
+        <main className="principal">
             <Banner />
             <MyParallax />
         </main>

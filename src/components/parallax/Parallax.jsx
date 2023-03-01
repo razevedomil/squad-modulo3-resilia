@@ -1,16 +1,12 @@
 import "../parallax/Parallax.css"
-import Banner from "./Banner"
 import Formulario from "../formulario/Formulario"
-import Footer from "../footer/Footer"
+import Api from "../api/Api"
 
 const MyParallax = () => {
     return(
         <div className="wrapper">
-        <main>
             <Formulario />
-            
-        </main>
-        
+            <Api />
     </div>
     )
 }
