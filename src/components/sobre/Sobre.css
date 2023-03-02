@@ -1,0 +1,75 @@
+.sobrePrincipal {
+    color: var(--textColor);
+    padding: 10px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.sobreCard {
+    height: 20em;
+    width: 15em;
+    margin: 1em;
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sobreCard h2 {
+    font-weight: 200;
+    font-size:1.4em;
+}
+
+.sobreCard img {
+    width:90%;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.sobreCard img:hover {
+    opacity: 100;
+}
+
+
+.cards {
+    margin: 0 23vW;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.sobreTxt h1 {
+    font-size: 1.45em;
+    font-weight: 300;
+    padding-right: 2vW;
+}
+
+.sobreTxt {
+    margin: 0 25vW;
+    display:flex;
+}
+
+
+@media (max-width: 508px) {
+    .cards {
+    display: flex;
+    flex-direction: column;
+    }
+    
+    .sobreCard {
+    height: 18em;
+    width: 13em;
+    }
+
+}
+
+
+@media (max-width: 788px) {
+.sobreTxt {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10vW;
+}    
+}
