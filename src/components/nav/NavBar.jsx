@@ -10,22 +10,26 @@ function Navbar() {
 		navRef.current.classList.toggle("responsive_nav");
 	};
 
+	function direcionaCtt () {
+		window.location.href='#contato'
+	}
+	
 	return (
 		<header>
 			<h3>Arteiro</h3>
 			<nav ref={navRef} >
 				<ul>
 					<li>
-						<Link to="/">Home</Link>
+						<Link to="/" onClick={showNavbar}>Home</Link>
 					</li>
 					<li>
-						<Link to="/galeria">Galeria</Link>
+						<Link to="/galeria" onClick={showNavbar}>Galeria</Link>
 					</li>
 					<li>
 						<Link to="/">Sobre nós</Link>
 					</li>
 					<li>
-						<Link to="/">Contato</Link>
+						<Link to="/" onClick={direcionaCtt}>Contato</Link>
 					</li>
 					<li>
 						<Link to="/">Blog</Link>
