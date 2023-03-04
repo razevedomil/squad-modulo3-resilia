@@ -1,9 +1,9 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { Link } from 'react-router-dom'
 import { FaAlignRight, FaTimes} from "react-icons/fa";
 import "./NavBar.css";
 
-function Navbar() {
+function Navbar({black}) {
 	const navRef = useRef();
 
 	const showNavbar = () => {
@@ -13,9 +13,9 @@ function Navbar() {
 	function direcionaCtt () {
 		window.location.href='#contato'
 	}
-	
+
 	return (
-		<header>
+		<header className={black ? 'black' : ''}>
 			<h3>Arteiro</h3>
 			<nav ref={navRef} >
 				<ul>
@@ -26,13 +26,10 @@ function Navbar() {
 						<Link to="/galeria" onClick={showNavbar}>Galeria</Link>
 					</li>
 					<li>
-						<Link to="/">Sobre nós</Link>
+						<Link to="/">Agenda</Link>
 					</li>
 					<li>
-						<Link to="/" onClick={direcionaCtt}>Contato</Link>
-					</li>
-					<li>
-						<Link to="/">Blog</Link>
+						<Link to="/blog" onClick={showNavbar}>Blog</Link>
 					</li>
 				</ul>
 				<button

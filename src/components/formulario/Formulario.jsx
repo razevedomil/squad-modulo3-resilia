@@ -44,8 +44,9 @@ const Formulario = () => {
     }
 
     return (
-        <div className="divPrincipal">
 
+        <div className="divPrincipal">
+             <div className='ctt-txt'><h1 className='titulo-contato'>Contato</h1></div>
             <form className="form-completo" id="form" onSubmit={(e) => { handleSubmit(e) }}>
                 <div className="form1">
                     <label className="nome">Nome</label>

@@ -48,8 +48,6 @@
     -moz-background-size: cover ;
     -o-background-size: cover ;
     border-top: 1px solid rgb(5, 5, 5);
-    
-  
   }
   
   section.module.parallax:after{
@@ -59,11 +57,11 @@
     position: absolute;
     z-index: 8;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 30%, #000 100%);
+
   }
   
   section.module.parallax-1{
     background-image: url(./../../images/Banner.png);
-    
   }
 
   
@@ -147,5 +145,15 @@
       font-size: 4.5vw;
       transition: 0.5s;
       text-transform: uppercase;
+    }
+
+    section.module.parallax:after{
+      content: "";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      z-index: 8;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 10%, #000 100%)
+  
     }
   }
