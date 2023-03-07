@@ -10,9 +10,6 @@ function Navbar({black}) {
 		navRef.current.classList.toggle("responsive_nav");
 	};
 
-	function direcionaCtt () {
-		window.location.href='#contato'
-	}
 
 	return (
 		<header className={black ? 'black' : ''}>

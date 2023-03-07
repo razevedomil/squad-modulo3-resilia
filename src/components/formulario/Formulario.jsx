@@ -1,7 +1,9 @@
 import './Formulario.css'
 import { useState } from 'react'
 
+
 const Formulario = () => {
+    //criando uma função que estabelece que os campos vazios iniciam vazios.
     const [form, SetForm] = useState({
         nome: '',
         idade: '',
@@ -14,7 +16,7 @@ const Formulario = () => {
 
     const [emptyValues, SetEmptyValue] = useState(false);
 
-
+    //criando uma variável que "assiste" cada mudança nos campos.
     const handleChange = (e) => {
         let newProp = form;
         newProp[e.target.name] = [e.target.value];
@@ -30,23 +32,26 @@ const Formulario = () => {
 
     }
 
+    /*função para verificar, ao preencher o formulário, se todos os campos
+    foram preenchidos. só será possível enviar a mensagem no caso de nenhum
+    campo estar em branco.*/
     function enviarMensagem() {
         if (
-            form["nome"] != "" ,
-            form["whatsapp"] != "" ,
-            form["localTatuagem"] != "" ,
+            form["nome"] != "",
+            form["whatsapp"] != "",
+            form["localTatuagem"] != "",
             form["tamanhoTatuagem"] != ""
         ) {
 
             alert("Solicitação enviada! Dentro de 2 dias úteis entraremos em contato.")
         }
-    
+
     }
 
     return (
 
         <div className="divPrincipal">
-             <div className='ctt-txt'><h1 className='titulo-contato'>Contato</h1></div>
+            <div className='ctt-txt'><h1 className='titulo-contato'>Contato</h1></div>
             <form className="form-completo" id="form" onSubmit={(e) => { handleSubmit(e) }}>
                 <div className="form1">
                     <label className="nome">Nome</label>
@@ -69,7 +74,7 @@ const Formulario = () => {
                         <option>Sávio (Fine Line)</option>
                         <option>Escolha por mim!</option>
                     </select>
-                    
+
                     <label className="localTatuagem">Parte do corpo</label>
                     <input type="text" placeholder="Antebraço" name="localTatuagem" className='input' onBlur={(e) => handleChange(e)}></input>
                     {emptyValues && form["localTatuagem"] == "" ? <span className="emptyText">!</span> : ""}

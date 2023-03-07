@@ -1,5 +1,6 @@
 import "../parallax/Button.css"
 
+//função que direciona para o formulário da página
 function direcionarOrcamento () {
     window.location.href='#form';
 }
