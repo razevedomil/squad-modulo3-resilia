@@ -30,6 +30,7 @@ const Blog = () => {
 
     return (
         <div className="blog">
+        <Cuidados/>
             <h1 className="Estilos">Estilos:</h1>
             <div className="blogEstilos">
             {(Estilos.map((Estilo) => (
@@ -42,7 +43,6 @@ const Blog = () => {
         )}
         </div>
         <Eventos />
-        <Cuidados/>
          </div>
         
 
