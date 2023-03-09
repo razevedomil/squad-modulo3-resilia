@@ -25,12 +25,11 @@ const Cuidados = () => {
 
     return (
         <div className="cuidados">
-            <h1 className="Cuidados">Cuidados:</h1>
+            <h1>Cuidados:</h1>
             <div className="blogCuidados">
             {(Cuidados.map((Cuidado) => (
                 <div className="Cuidado" key={Cuidado.id}>
-                    <h2 className="cuidado-nome">{Cuidado.Cuidado}</h2>
-                    <p className="cuidado-sobre">{Cuidado.descricao}</p>
+                    <p className="cuidado-descricao">• {Cuidado.descricao}</p>
                 </div>
    
             ))
@@ -41,5 +40,27 @@ const Cuidados = () => {
 
     );
 };
+
+
+const data = {
+    // Objeto com os dados que deseja enviar no POST
+  };
+  
+  axios.post('https://projeto-modulo3-resilia.onrender.com/Cuidados/2/', data)
+    .then((response) => {
+      // Tratar a resposta do servidor em caso de sucesso
+    })
+    .catch((error) => {
+      // Tratar a resposta do servidor em caso de erro
+    });
+
+axios.delete('https://projeto-modulo3-resilia.onrender.com/Cuidados/')
+  .then((response) => {
+    // Tratar a resposta do servidor em caso de sucesso
+  })
+  .catch((error) => {
+    // Tratar a resposta do servidor em caso de erro
+  });
+
 
 export default Cuidados;

@@ -1,3 +1,14 @@
 .fotoEvento {
     width: 25vh;
 }
+.blog {
+    margin-top:10vh;
+    margin-bottom:10vh;
+}
+
+.blogEventos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+

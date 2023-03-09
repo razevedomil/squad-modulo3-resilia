@@ -1,0 +1,10 @@
+
+.cuidados {
+    margin-top:10vh;
+    margin-bottom:10vh;
+}
+
+.blogCuidados {
+    display: flex;
+    flex-direction: column;
+}

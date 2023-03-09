@@ -30,6 +30,7 @@ const Blog = () => {
 
     return (
         <div className="blog">
+            
         <Cuidados/>
             <h1 className="Estilos">Estilos:</h1>
             <div className="blogEstilos">
@@ -48,5 +49,27 @@ const Blog = () => {
 
     );
 };
+
+
+const data = {
+    // Objeto com os dados que deseja enviar no POST
+  };
+  
+  axios.post('https://projeto-modulo3-resilia.onrender.com/Blog/2/', data)
+    .then((response) => {
+      // Tratar a resposta do servidor em caso de sucesso
+    })
+    .catch((error) => {
+      // Tratar a resposta do servidor em caso de erro
+    });
+
+axios.delete('https://projeto-modulo3-resilia.onrender.com/Blog/')
+  .then((response) => {
+    // Tratar a resposta do servidor em caso de sucesso
+  })
+  .catch((error) => {
+    // Tratar a resposta do servidor em caso de erro
+  });
+
 
 export default Blog;

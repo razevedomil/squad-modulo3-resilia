@@ -28,7 +28,7 @@ const Eventos = () => {
 
     return (
         <div className="blog">
-            <h1 className="Eventos">Eventos:</h1>
+            <h1>Eventos:</h1>
             <div className="blogEventos">
             {(Eventos.map((Evento) => (
                 <div className="Evento" key={Evento.id}>
@@ -45,5 +45,27 @@ const Eventos = () => {
 
     );
 };
+
+
+const data = {
+    // Objeto com os dados que deseja enviar no POST
+  };
+  
+  axios.post('https://projeto-modulo3-resilia.onrender.com/Eventos/2/', data)
+    .then((response) => {
+      // Tratar a resposta do servidor em caso de sucesso
+    })
+    .catch((error) => {
+      // Tratar a resposta do servidor em caso de erro
+    });
+
+axios.delete('https://projeto-modulo3-resilia.onrender.com/Eventos/')
+  .then((response) => {
+    // Tratar a resposta do servidor em caso de sucesso
+  })
+  .catch((error) => {
+    // Tratar a resposta do servidor em caso de erro
+  });
+
 
 export default Eventos;
