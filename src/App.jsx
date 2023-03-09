@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
 import './App.css'
 import Footer from './components/footer/Footer'
 import NavBar from './components/nav/NavBar'
+import Agenda from './pages/Agenda'
 import Home from './pages/Home'
 import Galeria from './pages/Galeria'
 import Blog from './pages/Blog'
@@ -38,6 +39,9 @@ function App() {
         </Route>
         <Route path="/galeria">
           <Galeria />
+        </Route>
+        <Route path="/agenda">
+          <Agenda />
         </Route>
         <Route path="/blog">
           <Blog />

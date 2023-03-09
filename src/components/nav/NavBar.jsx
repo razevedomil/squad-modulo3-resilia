@@ -23,7 +23,7 @@ function Navbar({black}) {
 						<Link to="/galeria" onClick={showNavbar}>Galeria</Link>
 					</li>
 					<li>
-						<Link to="/">Agenda</Link>
+						<Link to="/agenda" onClick={showNavbar}>Agenda</Link>
 					</li>
 					<li>
 						<Link to="/blog" onClick={showNavbar}>Blog</Link>
