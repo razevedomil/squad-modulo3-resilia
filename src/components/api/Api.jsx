@@ -3,6 +3,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 
 import { Link } from "react-router-dom";
+import { FaWindowClose } from "react-icons/fa";
 
 import "./Api.css";
 
@@ -10,6 +11,7 @@ const Api = () => {
 
 function deletar () {
   axios.delete('https://projeto-modulo3-resilia.onrender.com/Tatuadores/')
+  
   .then((response) => {
     // Tratar a resposta do servidor em caso de sucesso
   })
@@ -54,7 +56,7 @@ function deletar () {
                          <p>Idade: {Tatuador.Idade} Anos</p>
                          <p>Estilo: {Tatuador.Estilo}</p>
                         
-                         <button onClick={deletar}>deletar</button>
+                         <FaWindowClose onClick={deletar} className="btn-close" />
                        </div>
                     </div>
                 </div>
