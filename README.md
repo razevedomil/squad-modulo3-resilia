@@ -12,7 +12,12 @@ Projeto construído através do framework React, utilizando um servidor Json con
 npm install
 ```
 
-• Após realizar a instalação, execute o comando a seguir no Terminal do seu Editor de Código:
+• Instale o Axios para o consumo das APIs:
+```
+npm install axios
+```
+
+• Após realizar as instalações, execute o comando a seguir no Terminal do seu Editor de Código:
 ```
 npm run dev
 ```
