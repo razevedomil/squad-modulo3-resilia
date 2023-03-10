@@ -2,7 +2,7 @@
 
 .form-completo {
     width: 100vw;
-    height: 720px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -74,7 +74,16 @@ input[type="file"]{
     gap: 5px;
 }
 
+
+.titulo-contato{
+    background-color: #f0d22a;
+    border-bottom: 2px solid #fff;
+    color: #000000;
+    padding: 5px 10px 5px 10px;
+}
+
 .botao {
+    margin-top: 20px ;
     padding: 10px;
     border: 1px solid #fff;
     border-radius: 5px;
@@ -104,6 +113,10 @@ input::placeholder, textarea::placeholder {
 }
 
 @media (max-width: 680px) {
+
+    .form-completo{
+      height: 750px;  
+   }
     .form1,
     .form2,
     .form3,

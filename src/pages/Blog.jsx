@@ -32,7 +32,7 @@ const Blog = () => {
         <div className="blog">
             
         <Cuidados/>
-            <h1 className="Estilos">Estilos:</h1>
+           <div className="Estilo-txt"></div> <h1 className="Estilos">Estilos</h1>
             <div className="blogEstilos">
             {(Estilos.map((Estilo) => (
                 <div className="Estilo" key={Estilo.id}>

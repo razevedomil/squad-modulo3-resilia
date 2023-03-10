@@ -7,8 +7,8 @@ const MyParallax = () => {
     return(
         <div className="wrapper">
             <Sobre />
-            <Formulario />
             <Api />
+            <Formulario />
     </div>
     )
 }

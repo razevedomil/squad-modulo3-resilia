@@ -30,13 +30,19 @@ const Api = () => {
     return (
 
         <div className="Api-site">
-            <h1 className="Tatuadores">Tatuadores:</h1>
+           <div className="txt-api"><h1 className="Tatuadores">Tatuadores</h1></div>
             <div className="tatList">
             {(Tatuadores.map((Tatuador) => (
                 <div className="Tatuador" key={Tatuador.id}>
-                    <img src={Tatuador.Foto}/>
-                    <h2 className="tatuador-nome">{Tatuador.Nome}</h2>
-                    <p className="tatuador-sobre">{Tatuador.Cidade} - {Tatuador.Idade} anos - {Tatuador.Estilo} </p>
+                    <img src={Tatuador.Foto} className="tatuador-foto"/>
+                    <div className="tatuador-card">
+                       <h2 className="tatuador-nome">{Tatuador.Nome}</h2>
+                       <div className="tatuador-sobre">
+                         <p>Cidade: {Tatuador.Cidade}</p>
+                         <p>Idade: {Tatuador.Idade} Anos</p>
+                         <p>Estilo: {Tatuador.Estilo}</p>
+                       </div>
+                    </div>
                 </div>
 
             ))

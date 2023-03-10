@@ -17,16 +17,16 @@ function Navbar({black}) {
 			<nav ref={navRef} >
 				<ul>
 					<li>
-						<Link to="/" onClick={showNavbar}>Home</Link>
+						<Link to="/" onClick={showNavbar}>HOME</Link>
 					</li>
 					<li>
-						<Link to="/galeria" onClick={showNavbar}>Galeria</Link>
+						<Link to="/galeria" onClick={showNavbar}>GALERIA</Link>
 					</li>
 					<li>
-						<Link to="/agenda" onClick={showNavbar}>Agenda</Link>
+						<Link to="/agenda" onClick={showNavbar}>AGENDA</Link>
 					</li>
 					<li>
-						<Link to="/blog" onClick={showNavbar}>Blog</Link>
+						<Link to="/blog" onClick={showNavbar}>BLOG</Link>
 					</li>
 				</ul>
 				<button
