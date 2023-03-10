@@ -1,8 +1,48 @@
-.app{
-    background-color: aquamarine;
+.blog {
+    background-color: black;
+    color: #000000;
+    padding-top: 20vh;
+    padding-left: 20vh;
+    padding-right:20vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20vh;
 }
 
-.blog{
-    width: 100%;
-    background-color: aqua;
+.cuidadosList, .estilos, .eventos {
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
+
+.blogTitulo { 
+    color: #000000;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.blogH2 { 
+    color: #000000;
+}
+
+
+.cuidados, .estilos, .eventos {
+    box-shadow: 2px 2px 15px 3px #ffffff7a;
+    background-color:  #eeeeee;
+    border-radius: 20px;
+}
+
+
+.eventosFoto {
+    width: 70%;
+}
+
+
+
+@media (max-width: 690px) {
+.blog {
+    padding: 5vh;
+}
 }
