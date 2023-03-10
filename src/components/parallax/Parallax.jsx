@@ -6,6 +6,7 @@ import Sobre from "../sobre/Sobre"
 const MyParallax = () => {
     return(
         <div className="wrapper">
+            
             <Sobre />
             <Api />
             <Formulario />

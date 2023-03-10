@@ -7,6 +7,18 @@ import { Link } from "react-router-dom";
 import "./Api.css";
 
 const Api = () => {
+
+function deletar () {
+  axios.delete('https://projeto-modulo3-resilia.onrender.com/Tatuadores/')
+  .then((response) => {
+    // Tratar a resposta do servidor em caso de sucesso
+  })
+  .catch((error) => {
+    // Tratar a resposta do servidor em caso de erro
+  });
+}
+
+
     const [Tatuadores, setTatuadores] = useState([])
 
     const getTatuadores= async() => {
@@ -41,6 +53,8 @@ const Api = () => {
                          <p>Cidade: {Tatuador.Cidade}</p>
                          <p>Idade: {Tatuador.Idade} Anos</p>
                          <p>Estilo: {Tatuador.Estilo}</p>
+                        
+                         <button onClick={deletar}>deletar</button>
                        </div>
                     </div>
                 </div>
@@ -65,12 +79,7 @@ const data = {
       // Tratar a resposta do servidor em caso de erro
     });
 
-axios.delete('https://projeto-modulo3-resilia.onrender.com/Tatuadores/')
-  .then((response) => {
-    // Tratar a resposta do servidor em caso de sucesso
-  })
-  .catch((error) => {
-    // Tratar a resposta do servidor em caso de erro
-  });
+
+
 
 export default Api;
