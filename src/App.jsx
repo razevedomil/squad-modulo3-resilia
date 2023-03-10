@@ -5,6 +5,7 @@ import NavBar from './components/nav/NavBar'
 import Agenda from './pages/Agenda'
 import Home from './pages/Home'
 import Galeria from './pages/Galeria'
+import Agenda from './pages/Agenda'
 import Blog from './pages/Blog'
 import { useEffect, useState } from 'react'
 
@@ -39,6 +40,9 @@ function App() {
         </Route>
         <Route path="/galeria">
           <Galeria />
+        </Route >
+          <Route path="/agenda">
+            <Agenda />
         </Route>
         <Route path="/agenda">
           <Agenda />
