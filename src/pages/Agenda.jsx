@@ -14,7 +14,7 @@ const Agenda = () => {
         
     try{
 
-        const response = await axios.get("https://projeto-modulo3-resilia.onrender.com/Agenda/");
+        const response = await axios.get("https://testejson-zm4l.onrender.com/Agenda");
 
         const data = response.data;
 
@@ -35,9 +35,9 @@ const Agenda = () => {
             <div className="Agenda">
             {(Agenda.map((Agend) => (
                 <div className="Agend" key={Agend.id}>
-                    <img src={Agend.Foto}/>
-                    <h2 className="Agend-nome">{Agend.Title}</h2>
-                    <p className="Agend-sobre">{Agend.Cidade} - {Agend.Idade} - {Agend.Estilo} </p>
+                    <img src={Agend.dia}/>
+                    <h2 className="Agend-nome">{Agend.Dia}</h2>
+                    <p className="Agend-sobre">{Agend.Horário} - {Agend.Tatuador} - {Agend.Estilo} </p>
                 </div>
 
             ))
