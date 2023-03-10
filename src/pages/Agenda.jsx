@@ -52,8 +52,8 @@ const Agenda = () => {
     return (
 
         <div className="Agenda1">
-            <h1 className="Agenda">Agenda:</h1>
-            <div className="Agenda">
+            <div className="titulo-agenda"><h1 className="Agenda">Agenda:</h1></div>
+            <div className="Agenda2">
             {(Agenda.map((Agend) => (
                 <div className="Agend" key={Agend.id}>
                     <h2 className="Agend-Dia">{Agend.Dia}</h2>
@@ -67,8 +67,8 @@ const Agenda = () => {
         <div className="Marcar-Horario">
         <h1 className="Horario">Marcar Horário:</h1>
         <div className="form2">
-        <form id="myForm" onsubmit="return validarFormulario()">
-                    <label for="opcoes">Dia: </label>
+        <form id="myForm" className="formulario-agenda" onsubmit="return validarFormulario()">
+                    <label for="opcoes" className="txt-agenda">Dia: </label>
                     <select id="opcoes" name="opcoes" required className='input'>
                         <option value="" hidden>Escolha um dia</option>
                         <option>Segunda </option>
@@ -77,14 +77,14 @@ const Agenda = () => {
                         <option>Quinta </option>
                         <option>Sexta </option>
                     </select>
-                    <label>Horário: </label>
+                    <label className="txt-agenda">Horário: </label>
                     <select required className='input'>
                         <option value="" hidden>Escolha um horário</option>
                         <option>Manhã </option>
                         <option>Tarde </option>
                         <option>Noite </option>
                     </select>
-                    <label>Tatuador: </label>
+                    <label className="txt-agenda">Tatuador: </label>
                     <select required className='input'>
                         <option value="" hidden>Escolha um tatuador</option>
                         <option>Lívia (Blackwork)</option>

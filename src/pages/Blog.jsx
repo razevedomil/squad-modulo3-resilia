@@ -3,20 +3,6 @@ import "./Blog.css"
 const Blog = () => {
     return (
         <section className="blog">
-            <div className="cuidados">
-                <h1 className="blogTitulo">Cuidados com a tatuagem</h1>
-                <ul className="cuidadosList">
-                    <li className="cuidadosItem">
-                        Mantenha a área limpa: A área da tatuagem deve ser mantida limpa e seca para evitar a contaminação por bactérias e infecções. Lave suavemente com sabão neutro. Seque com uma toalha limpa e macia.
-                    </li>
-                    <li className="cuidadosItem">
-                        Hidrate a pele: Mantenha a área da tatuagem hidratada para ajudar a prevenir a descamação e a perda de cor. Use uma loção hidratante sem fragrância ou álcool.
-                    </li>
-                    <li className="cuidadosItem">
-                        Proteja do sol: A exposição ao sol pode desbotar a tatuagem e causar danos à pele. Use protetor solar com um fator de proteção solar (FPS) de pelo menos 30 e evite expor a tatuagem ao sol durante as primeiras semanas de cicatrização.
-                    </li>
-                </ul>
-            </div>
             <div className="estilos">
                 <h1 className="blogTitulo">Estilos de tatugem</h1>
                 <h2 className="blogH2">Blackwork</h2>
@@ -40,12 +26,11 @@ const Blog = () => {
                 <h2 className="blogH2">Fine Line</h2>
                 <p className="estilosItem">
                     Este estilo de tatuagem usa linhas finas e delicadas para criar um design detalhado. É popular para tatuagens minimalistas, como tatuagens de contorno, ou para adicionar detalhes a um design maior.</p>
-
             </div>
             <div className="eventos">
                 <h2 className="blogH2">Próximos eventos</h2>
-                <ul>
-                <li>
+                <ul className="ul-eventos">
+                <li className="li">
                 
                 <img className="eventosFoto" src="https://scontent-gig2-1.xx.fbcdn.net/v/t39.30808-6/325735482_931521087837503_4455511993611437142_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_ohc=48ql3MPM3ukAX8kOd82&_nc_ht=scontent-gig2-1.xx&oh=00_AfAANca_5Mc1mdi-n6UKTXe0DwqiuXUHNkoXoWaNVj0Z2Q&oe=640DC331" />
                 <h2 classname="blogH2">Tattoo Week Rio</h2>
@@ -53,7 +38,7 @@ const Blog = () => {
                 <p className="eventosItem">Bairro: Cidade Nova</p>
                 </li>
 
-                <li>
+                <li className="li">
                 
                 <img className="eventosFoto" src="https://storage.builderall.com//franquias/2/6366226/editor-html/10692062.jpg" />
                 <h2 classname="blogH2">Rio Art Tattoo Festival</h2>
@@ -61,7 +46,7 @@ const Blog = () => {
                 <p className="eventosItem">Bairro: Centro</p>
                 </li>
 
-                <li>
+                <li className="li">
                 <img className="eventosFoto" src="https://scontent-gig2-1.xx.fbcdn.net/v/t39.30808-6/326129483_842738837023214_1835287402456747400_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=NDp_olgaYVcAX9flc7a&_nc_ht=scontent-gig2-1.xx&oh=00_AfCK--qZ8JpBQL3byrIivqa5UjfP5ztnfq0AxHEYx-uyIA&oe=640D9590" />
                 <h2 classname="blogH2">Oeste Fest Tattoo</h2>
                 <p className="eventosItem">Data: 14, 15 e 16 de julho </p>

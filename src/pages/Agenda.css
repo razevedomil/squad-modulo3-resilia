@@ -1,44 +1,62 @@
-.Agenda{
-    background-color: rgb(255, 255, 255);
+.Agenda1{
+    background-image: url(./../images/banner4.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding-top: 80px;
+}
+
+.titulo-agenda{
+    display: flex;
     justify-content: center;
-    display: flex;
+    margin-bottom: 30px;
 }
 
-.Agend {
+.Agenda{
+    text-align: center;
+    background-color: #f0d22a;
+    border-bottom: 2px solid #fff;
+    color: #000000;
+    padding: 5px 10px 5px 10px;
+    word-wrap: break-word;
+}
+
+.Agenda2{
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
-    flex-direction: column;
 }
 
-h1.Agenda{
-    color: black;
+.Agend{
+    color: #f0d22a;
 }
 
-
-h1.Horario {
-    color: black;
+.Agend-Dia{
+    color: white;
+    text-align: center;
 }
 
-h2.Agend-Dia {
-    color: black;
+.Horario{
+    text-align: center;
+    margin-top: 30px;
 }
 
-p.Agend-Status {
-    color: rgb(0, 0, 0);
-}
-
-p.Agend-Horario{
-    color: black;
-}
-
-p.Agend-Tatuador{
-    color: black;
-}
-
-.Marcar-Horario {
+.formulario-agenda{
     display: flex;
     flex-direction: column;
-    align-items: center;
-
+    height: 100%;
 }
 
+.input{
+    margin: 20px;
+    
+}
+
+.txt-agenda{
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+}

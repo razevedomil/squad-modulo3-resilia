@@ -15,7 +15,7 @@ function Navbar({black}) {
 		<header className={black ? 'black' : ''}>
 			<h3>Arteiro</h3>
 			<nav ref={navRef} >
-				<ul>
+				<ul className="nav-ul">
 					<li>
 						<Link to="/" onClick={showNavbar}>HOME</Link>
 					</li>
