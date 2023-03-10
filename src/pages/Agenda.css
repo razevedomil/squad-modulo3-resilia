@@ -1,3 +1,44 @@
 .Agenda{
-    background-color: brown;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    display: flex;
 }
+
+.Agend {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1.Agenda{
+    color: black;
+}
+
+
+h1.Horario {
+    color: black;
+}
+
+h2.Agend-Dia {
+    color: black;
+}
+
+p.Agend-Status {
+    color: rgb(0, 0, 0);
+}
+
+p.Agend-Horario{
+    color: black;
+}
+
+p.Agend-Tatuador{
+    color: black;
+}
+
+.Marcar-Horario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
