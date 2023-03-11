@@ -22,4 +22,4 @@ npm install axios
 npm run dev
 ```
 
-• Acesse através da url local host informada no terminal.
+• Acesse através da url local host informada no terminal ou através do link https://arteirotattoo.vercel.app/
