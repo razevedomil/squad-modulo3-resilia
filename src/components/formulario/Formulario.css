@@ -116,7 +116,7 @@ input::placeholder, textarea::placeholder {
 @media (max-width: 680px) {
 
     .form-completo{
-      height: 800px;  
+      height: fit-content;  
    }
     .form1,
     .form2,
