@@ -1,0 +1,10 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+	  font-family: "Titillium Web", sans-serif;
+    overflow-x: hidden;
+
+  }

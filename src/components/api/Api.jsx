@@ -3,10 +3,24 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 
 import { Link } from "react-router-dom";
+import { FaWindowClose } from "react-icons/fa";
 
 import "./Api.css";
 
 const Api = () => {
+
+function deletar () {
+  axios.delete('https://projeto-modulo3-resilia.onrender.com/Tatuadores/')
+  
+  .then((response) => {
+    // Tratar a resposta do servidor em caso de sucesso
+  })
+  .catch((error) => {
+    // Tratar a resposta do servidor em caso de erro
+  });
+}
+
+
     const [Tatuadores, setTatuadores] = useState([])
 
     const getTatuadores= async() => {
@@ -28,16 +42,29 @@ const Api = () => {
 }, []);
 
     return (
+
         <div className="Api-site">
-            <h1 className="Tatuadores">Tatuadores:</h1>
+           <div className="txt-api"><h1 className="Tatuadores">Tatuadores</h1></div>
+            <div className="tatList">
             {(Tatuadores.map((Tatuador) => (
                 <div className="Tatuador" key={Tatuador.id}>
-                    <h2 className="tatuador-nome">{Tatuador.Nome}</h2>
-                    <p className="tatuador-sobre">{Tatuador.Cidade} - {Tatuador.Idade} anos - {Tatuador.Estilo} </p>
+                    <img src={Tatuador.Foto} className="tatuador-foto"/>
+                    <div className="tatuador-card">
+                       <h2 className="tatuador-nome">{Tatuador.Nome}</h2>
+                       <div className="tatuador-sobre">
+                         <p>Cidade: {Tatuador.Cidade}</p>
+                         <p>Idade: {Tatuador.Idade} Anos</p>
+                         <p>Estilo: {Tatuador.Estilo}</p>
+                        
+                         <FaWindowClose onClick={deletar} className="btn-close" />
+                       </div>
+                    </div>
                 </div>
+
             ))
         )}
         </div>
+         </div>
     );
 
 };
@@ -54,12 +81,7 @@ const data = {
       // Tratar a resposta do servidor em caso de erro
     });
 
-axios.delete('https://projeto-modulo3-resilia.onrender.com/Tatuadores/')
-  .then((response) => {
-    // Tratar a resposta do servidor em caso de sucesso
-  })
-  .catch((error) => {
-    // Tratar a resposta do servidor em caso de erro
-  });
+
+
 
 export default Api;

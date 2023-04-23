@@ -1,34 +1,32 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { Link } from 'react-router-dom'
 import { FaAlignRight, FaTimes} from "react-icons/fa";
 import "./NavBar.css";
 
-function Navbar() {
+function Navbar({black}) {
 	const navRef = useRef();
 
 	const showNavbar = () => {
 		navRef.current.classList.toggle("responsive_nav");
 	};
 
+
 	return (
-		<header>
+		<header className={black ? 'black' : ''}>
 			<h3>Arteiro</h3>
 			<nav ref={navRef} >
-				<ul>
+				<ul className="nav-ul">
 					<li>
-						<Link to="/">Home</Link>
+						<Link to="/" onClick={showNavbar}>HOME</Link>
 					</li>
 					<li>
-						<Link to="/galeria">Galeria</Link>
+						<Link to="/galeria" onClick={showNavbar}>GALERIA</Link>
 					</li>
 					<li>
-						<Link to="/">Sobre nós</Link>
+						<Link to="/agenda" onClick={showNavbar}>AGENDA</Link>
 					</li>
 					<li>
-						<Link to="/">Contato</Link>
-					</li>
-					<li>
-						<Link to="/">Blog</Link>
+						<Link to="/blog" onClick={showNavbar}>BLOG</Link>
 					</li>
 				</ul>
 				<button

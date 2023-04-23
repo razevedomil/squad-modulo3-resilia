@@ -22,7 +22,7 @@
   position: relative;
   height: 2.8em;
   padding-right: 3.3em;
-  z-index: 99999;
+  z-index: 999;
   cursor: pointer;
   text-transform: uppercase;
  }

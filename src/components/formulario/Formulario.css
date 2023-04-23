@@ -1,24 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
 .form-completo {
     width: 100vw;
+    height: 700px;
     display: flex;
     flex-direction: column;
     padding: 20px;
     border: 2px;
     margin:10px;
     color: azure;
-
-
+    word-wrap: break-word;
 }
-
 
 .emptyText {
     color: rgb(243, 9, 9);
@@ -35,7 +27,6 @@ input {
     transition: 1s;
 }
 
-
 .input:focus{
     border-bottom: 1px solid #f0d22a;
 }
@@ -47,7 +38,6 @@ textarea, select {
     background-color: #0f0f0f;
     padding-left: 10px;
 }
-
 
 textarea {
     resize: none;
@@ -67,7 +57,6 @@ input[type="file"]{
     cursor: pointer;
 }
 
-
 .form1, .form2, .form3 {
     display: flex;
     align-items: center;
@@ -86,7 +75,16 @@ input[type="file"]{
     gap: 5px;
 }
 
+
+.titulo-contato{
+    background-color: #f0d22a;
+    border-bottom: 2px solid #fff;
+    color: #000000;
+    padding: 5px 10px 5px 10px;
+}
+
 .botao {
+    margin-top: 20px ;
     padding: 10px;
     border: 1px solid #fff;
     border-radius: 5px;
@@ -103,16 +101,23 @@ border: 1px solid #79600f;
 color: #0f0f0f;
 }
 
+.ctt-txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
 
 input::placeholder, textarea::placeholder {
     color: #686868;
     
 }
 
-
-
 @media (max-width: 680px) {
 
+    .form-completo{
+      height: fit-content;  
+   }
     .form1,
     .form2,
     .form3,
